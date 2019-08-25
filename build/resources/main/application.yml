@@ -1,0 +1,7 @@
+server.port: 9999
+spring.cloud.stream.bindings.input.destination: sensor-topic
+spring.cloud.stream.bindings.output.destination: sensor-topic
+spring.cloud.stream.bindings.output.contentType: application/*+avro
+spring.cloud.stream.schemaRegistryClient.endpoint: http://localhost:8081
+spring.cloud.stream.schema.avro.schema-locations: classpath:avro/Sensor.avsc
+
